@@ -1,3 +1,6 @@
+.idea
+/target
+.imi
 # Compiled class file
 *.class
 
