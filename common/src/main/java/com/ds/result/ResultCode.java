@@ -15,7 +15,7 @@ public class ResultCode {
     /**
      * 请求失败
      */
-    public static final int FAIL = 555;
+    public static final int FAIL = 400;
 
     /*---------------------------------------------------------*/
 }

@@ -8,7 +8,7 @@ public class ResultMessage {
     public static final String FAIL = "失败";
 
 
-    /*------------------- 默认返回消息 -------------------*/
+    /*-------------------业务逻辑返回消息 -------------------*/
     public static final String PARAM_ERROR = "参数错误";
 
 }
