@@ -1,2 +1,2 @@
 # ds-spring-cloud-alibaba
-ds-spring-cloud-alibab
+ds-spring-cloud-alibaba
