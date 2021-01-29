@@ -36,7 +36,7 @@ public class Result<T> {
      * @return
      */
     public static <T> Result<T> success(){
-        return new Result<>(ResultCode.success,ResultMessage.success,null);
+        return new Result<>(ResultCode.SUCCESS,ResultMessage.SUCCESS,null);
     }
 
     /**
@@ -46,7 +46,17 @@ public class Result<T> {
      * @return
      */
     public static <T> Result<T> success(String message){
-        return new Result<>(ResultCode.success,message,null);
+        return new Result<>(ResultCode.SUCCESS,message,null);
+    }
+
+    /**
+     * 只带数据的成功返回
+     * @param data
+     * @param <T>
+     * @return
+     */
+    public static <T> Result<T> success(T data){
+        return new Result<>(ResultCode.SUCCESS,ResultMessage.SUCCESS,data);
     }
 
     /**
@@ -57,7 +67,7 @@ public class Result<T> {
      * @return
      */
     public static <T> Result<T> success(String message, T data){
-        return new Result<>(ResultCode.success,message,data);
+        return new Result<>(ResultCode.SUCCESS,message,data);
     }
 
     /**
@@ -66,7 +76,7 @@ public class Result<T> {
      * @return
      */
     public static <T> Result<T> fail(){
-        return new Result<>(ResultCode.fail,ResultMessage.fail,null);
+        return new Result<>(ResultCode.FAIL,ResultMessage.FAIL,null);
     }
 
     /**
@@ -76,7 +86,18 @@ public class Result<T> {
      * @return
      */
     public static <T> Result<T> fail(String message){
-        return new Result<>(ResultCode.fail,message,null);
+        return new Result<>(ResultCode.FAIL,message,null);
+    }
+
+
+    /**
+     * 只带数据的返回
+     * @param data
+     * @param <T>
+     * @return
+     */
+    public static <T> Result<T> fail(T data){
+        return new Result<>(ResultCode.FAIL,ResultMessage.FAIL,data);
     }
 
     /**
@@ -87,6 +108,6 @@ public class Result<T> {
      * @return
      */
     public static <T> Result<T> fail(String message, T data){
-        return new Result<>(ResultCode.fail,message,data);
+        return new Result<>(ResultCode.FAIL,message,data);
     }
 }
