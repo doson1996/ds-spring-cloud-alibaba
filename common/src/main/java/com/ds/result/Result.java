@@ -7,12 +7,13 @@ public class Result<T> {
 
     /**
      * 返回状态码
-     * {@Link }
+     * {@link ResultCode}
      */
     public int code;
 
     /**
      * 返回消息
+     * {@link ResultMessage}
      */
     public String message;
 

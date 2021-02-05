@@ -1,0 +1,25 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: local-cache
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ds.com:8848
+        namespace: ds-spring-cloud-alibaba
+        group: dev
+        username: nacos
+        password: nacos
+#        namespace: ds-spring-cloud-alibaba
+#        group: dev
+#        username: ds
+#        password: ds
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
