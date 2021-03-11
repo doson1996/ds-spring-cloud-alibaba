@@ -33,6 +33,11 @@ public class EchoContronller {
         return echoService.echo(msg+"  NacosConfig username-" + username + "    -fegin");
     }
 
+    @GetMapping("bonjour/{name}")
+    public String bonjour(@PathVariable String name){
+        return echoService.bonjour(name);
+    }
+
     @GetMapping(value = "/test")
     public Result test() {
         return Result.success("","username");

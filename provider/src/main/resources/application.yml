@@ -12,11 +12,19 @@ spring:
         #  group: dev
         #  username: nacos
         #  password: nacos
-        namespace: ds-spring-cloud-alibaba
-        group: dev
-        username: ds
-        password: ds
+        #namespace: ds-spring-cloud-alibaba
+        #group: dev
+        #username: ds
+        #password: ds
 
+    sentinel:
+      transport:
+        port: ${server.port}
+        dashboard: ds.com:8080
+
+feign:
+  sentinel:
+    enabled: true
 
 management:
   endpoints:

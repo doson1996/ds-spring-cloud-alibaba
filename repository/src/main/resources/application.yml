@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: provider
+    name: repository
   cloud:
     nacos:
       discovery:
@@ -12,10 +12,10 @@ spring:
         #  group: dev
         #  username: nacos
         #  password: nacos
-        namespace: ds-spring-cloud-alibaba
-        group: dev
-        username: ds
-        password: ds
+        #namespace: ds-spring-cloud-alibaba
+        #group: dev
+        #username: ds
+        #password: ds
 
 
 management:

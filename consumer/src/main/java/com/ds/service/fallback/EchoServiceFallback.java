@@ -17,5 +17,10 @@ public class EchoServiceFallback implements EchoService {
 
         return Result.fail(msg);
     }
+
+    @Override
+    public String bonjour(String name) {
+        return null;
+    }
 }
 
